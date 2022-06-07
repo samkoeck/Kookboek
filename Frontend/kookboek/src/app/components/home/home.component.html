@@ -1,1 +1,21 @@
-<p>home works!</p>
+<div class="container">
+    <form [formGroup]="guestForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="form-group content">
+            <label class="name-form-label">First name</label>
+            <input class="form-control" type="text" placeholder="Enter your first name" id="firstName" formControlName="firstName" data-cy="firstName">
+        </div>
+        <div class="form-group content">
+            <label class="name-form-label">Last name</label>
+            <input class="form-control" type="text" placeholder="Enter your last name" id="lastName" formControlName="lastName" data-cy="lastName">
+        </div>
+        <div class="form-group content">
+            <label class="name-form-label">Phone number</label>
+            <input class="form-control" type="text" placeholder="Enter your phone number" id="phoneNumber" formControlName="phoneNumber" data-cy="phoneNumber">
+        </div>
+
+        <div class="form-group">
+            <button class="btn-primary" data-cy="submit">Submit</button>
+        </div>
+    </form>
+    <div> <pre *ngIf="response">{{response}}</pre> </div>
+</div>
