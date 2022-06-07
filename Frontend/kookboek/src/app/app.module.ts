@@ -15,6 +15,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
