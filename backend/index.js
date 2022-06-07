@@ -57,6 +57,12 @@ app.post('/deletePerson', async (req, res) => {
     }
 });
 
+app.get('/getGuests', async (req, res) => {
+    const dataAsJson = returnedDataJson();
+    res.status(200).send(dataAsJson);
+
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 })
